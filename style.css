@@ -42,10 +42,32 @@ main {
   text-align: center;
 }
 
+.header_Title button{
+  background-image: url(img/Add.png);
+  width: 70px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  transition: .5s ease-in-out;
+}
+
+.header_Title button:hover{
+  transform: scale(0.95);
+}
+
+.activeButton{
+  transition-duration: 1s;
+  filter: invert();
+}
+
 ::placeholder {
   color: #000000;
   font-family: "Koulen", sans-serif;
   font-size: 17px;
+}
+
+.inputPlace{
+  color: white;
 }
 
 .tasks {
@@ -61,9 +83,18 @@ main {
     font-size: 28px;
 }
 
+.card_Task h2{
+  font-size: 28px;
+}
+.card_Task label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
 input[type="checkbox"] {
     -webkit-appearance: none;
-    margin: 0px 47px 0px 0px;
     box-shadow: rgb(255, 255, 255) 0px 1px 1px, rgb(255, 255, 255) 0px 0px 0px 1px;
     background-color: rgb(0, 0, 0);
     width: 25px;
